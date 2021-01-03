@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: rgb(55, 55, 118);
+  overflow-x: hidden;
+  position: relative;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.body-container {
+  max-width: 1200px;
+}
+.container-md {
+  max-width: 1200px;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+.hero-img {
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+  height: 26rem;
+  width: 22em;
+  object-fit: cover;
+  width: 70%;
+}
+.discount {
+  font-weight: 900;
+  color: orange;
+}
+.header-content {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.header-content > h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgb(30, 186, 230);
+  text-shadow: -3px 3px gray;
+}
+.btn {
+  padding: 1rem 3rem;
+  background-color: rgb(221, 104, 104);
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+}
+.advert {
+  display: grid;
+  margin: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 2em;
+}
+.dotted > img {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  height: 100%;
+  width: 15em;
+  z-index: -1;
+}
+.advertbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 0.7em;
+  height: 12em;
+  overflow: hidden;
+  z-index: 0;
+}
+.dotted {
+  box-sizing: border-box;
+  align-self: center;
+  width: 90%;
+  height: 90%;
+  border-radius: 0.7em;
+  border: 2px dashed white;
+}
+.advertbox:nth-child(1) {
+  background-color: pink;
+}
+.advertbox:nth-child(2) {
+  background-color: skyblue;
+}
+
+.advertbox:nth-child(3) {
+  background-color: rgb(240, 240, 81);
+}
+.advert-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+.advert-content > h2 {
+  font-weight: 900;
+  text-shadow: 3px 3px 6px rgb(14, 13, 13);
+}
+.advert-content > p {
+  text-shadow: 3px 3px 6px rgb(42, 41, 41);
+}
+
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+  gap: 1em;
+}
+.product-box {
+  position: relative;
+  box-shadow: 2px 2px 6px gray;
+}
+.product-box:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease-out;
+}
+.product-box:hover .prod-img > img {
+  filter: brightness(50%);
+}
+.product-box:hover .prod-img > .icons > i {
+  opacity: 1;
+  transform: translate(0, -50%);
+  font-size: 2vmax;
+  padding: 1vmax;
+}
+.prod-img > img {
+  height: 100%;
+  width: 100%;
+}
+
+.icons {
+  position: absolute;
+  top: 7em;
+  right: 0.5em;
+  font-size: 0.5rem;
+}
+.icons > i {
+  font-size: 1vmax;
+  padding: 0.6vmax;
+  margin-top: 1em;
+  margin-right: 0.6em;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+  display: block;
+  opacity: 0;
+}
+.icons > i:hover {
+  color: white;
+  background-color: rgb(233, 106, 106);
+  transform: scale(1.2);
+}
+.prod-img > i:nth-child(1) {
+  margin-top: 1.5em;
+}
+.prod-info {
+  text-align: center;
+  background-color: white;
+}
+.bxs-star:hover {
+  transition: all 0.3s ease-out;
+  transform: scale(1.6);
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1em;
+  text-align: center;
+}
+.testimony:hover {
+  transform: translateY(-1em);
+  transition: all 0.3s ease-in-out;
+}
+.content > * {
+  font-size: 0.9em;
+  margin-top: 1rem;
+}
+.testimony-img > * {
+  margin-top: 0.5rem;
+}
+.testimony-img > img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.content > i {
+  color: rgb(73, 160, 108);
+}
+.testimony {
+  position: relative;
+  margin-top: 3em;
+  box-shadow: 3px 3px 6px gray;
+  padding-bottom: 2rem;
+}
+.testimony > .content > span {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  font-family: sans-serif;
+  font-size: 8em;
+  line-height: 1;
+  transform: translate(-50%, 0);
+}
+.content > p {
+  padding: 0 2em 0 2em;
+  margin-top: 5rem;
+}
+.midpage-banner {
+  margin-top: 2em;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  background: rgb(40, 40, 121);
+}
+.midpage-banner > img {
+  width: 100%;
+}
+.banner-info {
+  text-align: center;
+  align-self: center;
+}
+.banner-info > h2 {
+  font-weight: 1000;
+  color: orange;
+}
+.banner-info > h1 {
+  font-family: unset;
+  font-size: 50px;
+  font-weight: 1000;
+  color: white;
+}
+.brands{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(3rem,8rem));
+    margin: 3em 0 3em 5em ;
+
+}
+.brands>img{
+    margin: 1em;
+    height: 2em;
+  }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  margin: 1em;
+}
+.navtop {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+.shpg {
+  display: none;
+}
+.nav-link {
+  display: inline-block;
+}
+.nav-link:not(:last-child) {
+  margin-right: 2em;
+}
+.nav-link:last-child {
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+header {
+  height: 30em;
+  overflow: hidden;
+  background-color: rgb(207, 223, 245);
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-img {
+    right: 5%;
+  }
+  .advert {
+    grid-template-columns: repeat(auto-fll, minmax(8rem, 11rem));
+  }
+  .advertbox > .dotted > img {
+    left: -20%;
+  }
+  .advertbox > .dotted > div {
+    top: 40%;
+    left: 25%;
+    color: rgb(255, 255, 255);
+  }
+
+  .midpage-banner > img {
+    height: 100%;
+  }
+  .banner-info {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  nav {
+    display: inline-block;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .hero-img {
+    height: 15em;
+    z-index: 0;
+    left: 6em;
+  }
+  .header-content {
+    top: 30%;
+    opacity: 0.7;
+    z-index: 1;
+  }
+
+  .shpg {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+  }
+  .hamburger {
+    display: inline;
+    position: absolute;
+    right: 0%;
+    font-size: 2rem;
+    margin: 0.8rem 1rem;
+    float: right;
+  }
+  .nav-link {
+    display: block;
+    margin-left: 1em;
+  }
+  .bx-shopping-bag {
+    margin-top: 0.5em;
+    font-size: 2rem;
+  }
+  .navtop {
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(36, 54, 79);
+  }
+  .menu {
+    background-color: #fff;
+    height: 100%;
+    position: absolute;
+    width: 65%;
+    left: -100%;
+    top: 0;
+    overflow: auto;
+    line-height: 4rem;
+    text-align: start;
+    transition: all 0.5s ease-out;
+    z-index: 999;
+  }
+  .menu.show {
+    left: 0px;
+  }
+  body.show::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease-out;
+    z-index: 10;
+  }
+  .bxs-chevrons-left {
+    margin-top: 0;
+  }
+  .product-section {
+    grid-template-columns: repeat(auto-fill, minmax(8em, 9em));
+    align-content: center;
+    gap: 0em;
+  }
+  .product-box {
+    box-shadow: none;
+    border: 1px solid gray;
+  }
+  .midpage-banner{
+      display: block;
+  }
+  .midpage-banner > img {
+    display: none;
+  }
+  .testimonials{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+  }
+  .testimony>.content{
+    font-size: .5em;
+  }
+  .testimony:nth-child(1){
+      grid-column: 1/4;
+  }
+  .testimony:nth-child(2){
+      grid-column: 4/7;
+  }
+  .testimony:nth-child(3){
+      grid-column: 2/6;
+      grid-row: 2/3;
+  }
+    .advert{
+    display:grid;
+    margin: 2em 0 1em 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+  }
+
+  .advertbox:nth-child(1){
+      grid-column: 1/4;
+  }
+  .advertbox:nth-child(2){
+      grid-column: 4/7;
+  }
+  .advertbox:nth-child(3){
+      grid-column: 2/6;
+      grid-row: 2/3;
+  }
+  .prod-info{
+    font-size: 60%;
+  }
+  .brands{
+    grid-template-columns: repeat(auto-fit,minmax(3rem,4rem));
+    margin: 2em;
+  }
+  .brands>img{
+    margin: 1em;
+    height: 2em;
+  }
+}
