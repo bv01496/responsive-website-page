@@ -1,2 +1,2 @@
 # responsive-website-page
-a responsive website page using html css and javascript.
+a responsive shopping website page compatible with all sizes devices, using html css and javascript.
